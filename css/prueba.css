@@ -578,6 +578,38 @@ a {
   border: none;
   border-bottom: 1px solid var(--oscuro); }
 
+/*-------------------404-------------------*/
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+
+.error__container {
+  text-align: center; }
+  .error__container h1 {
+    font-size: 7rem; }
+  .error__container p {
+    font-size: 2rem; }
+
+.error__404 {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-3rem); }
+  60% {
+    transform: translateY(-1.5rem); } }
+
+.error__404--bounced {
+  animation-name: bounce; }
+
 /*-------------------FOOTER-------------------*/
 .footer {
   background-color: var(--primario-os);
